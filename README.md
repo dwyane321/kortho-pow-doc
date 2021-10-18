@@ -9,7 +9,7 @@
 ### windows下：
         第一步 在工作目录下创建挖矿目录，如 D:/miner（非C盘）。
 
-        第二步 将windows 下载的挖矿软件包解压到D:/miner下。
+        第二步 将下载的windows挖矿软件包拷贝到D:/miner下并解压。
 
         第三步 进入生成的解压目录，修改config下"korthoConf.yaml"的配置文件（**非常关键的一步）：
             （1）：找到'Miner'参数修改为自己的矿工地址，如 Miner : "Kto***"。
@@ -35,7 +35,7 @@
 
         第一步 在工作目录下创建挖矿目录，如 /work/miner。
 
-        第二步 将 linux 下载的挖矿软件包解压到/work/miner下。
+        第二步 将下载的 linux 挖矿软件包拷贝到/work/miner下并解压。
 
         第三步 进入生成的解压目录，修改config下"korthoConf.yaml"的配置文件（**非常关键的一步）：
             （1）：找到'Miner'参数修改为自己的矿工地址，如 Miner : "Kto***"。
