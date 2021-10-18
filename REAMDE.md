@@ -13,7 +13,7 @@
 
         第三步 进入生成的解压目录，修改config下"korthoConf.yaml"的配置文件（**非常关键的一步）：
             （1）：找到'Miner'参数修改为自己的矿工地址，如 Miner : "Kto***"。
-                  种子节点 greamhost: "172.16.10.45"
+                  种子节点 greamhost: "节点ip"
                   AdvertiseAddr : "本机IP"
 
         第四步 进入生成的解压目录，打开windows命令行：        
@@ -39,7 +39,7 @@
 
         第三步 进入生成的解压目录，修改config下"korthoConf.yaml"的配置文件（**非常关键的一步）：
             （1）：找到'Miner'参数修改为自己的矿工地址，如 Miner : "Kto***"。
-                  种子节点 greamhost: "172.16.10.45"
+                  种子节点 greamhost: "节点ip"
                   AdvertiseAddr : "本机IP"
             （2）：键入命令:
 ```
