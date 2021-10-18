@@ -17,7 +17,7 @@
                   AdvertiseAddr : "本机IP"
 
         第四步 进入生成的解压目录，打开windows命令行：        
-            （0）：键入命令:
+            （0）：每次删除kortho.db,然后键入命令:
 ```
                 ./miner.exe -n 100 -b 0x20002000 -s 1 -m 2
              
@@ -41,7 +41,7 @@
             （1）：找到'Miner'参数修改为自己的矿工地址，如 Miner : "Kto***"。
                   种子节点 greamhost: "节点ip"
                   AdvertiseAddr : "本机IP"
-            （2）：键入命令:
+            （2）：每次删除kortho.db,然后键入命令:
 ```
                 sudo ./miner -n 100 -b 0x20002000 -s 1 -m 1
              
@@ -70,7 +70,7 @@
                        种子节点 greamhost: "172.16.10.45"
                        AdvertiseAddr : "本机IP"
             第四步 进入miner目录,打开windows命令行：
-                （0）：键入命令: 
+                （0）：每次删除kortho.db,然后键入命令: 
 ```
                     ./miner.exe -n 100 -b 0x20002000 -s 1 -m 2
 
@@ -96,7 +96,7 @@
                        种子节点 greamhost: "172.16.10.45"
                        AdvertiseAddr : "本机IP"
             第四步 /work/miner/：
-                （0）：键入命令: 
+                （0）：每次删除kortho.db,然后键入命令: 
 ```
                     sudo ./miner -n 100 -b 0x20002000 -s 1 -m 2
 
