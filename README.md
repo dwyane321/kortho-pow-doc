@@ -20,7 +20,7 @@
         第四步 进入生成的解压目录，打开windows命令行：        
             （0）：每次删除kortho.db,然后键入命令:
 ```
-                ./miner.exe -n 100 -s 1 -m 1
+                miner.exe -n 100 -s 1 -m 1
              
 ```
             （1）：-n 表示 开启 cpu 数量
@@ -74,7 +74,7 @@
             第四步 进入miner目录,打开windows命令行：
                 （0）：每次删除kortho.db,然后键入命令: 
 ```
-                    ./miner.exe -n 100 -s 1 -m 1
+                    miner.exe -n 100 -s 1 -m 1
 
 ```
                 （1）：-n 表示 开启 cpu 数量
