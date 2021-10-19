@@ -110,3 +110,8 @@
             第五步 回车执行命令，开启挖矿。
 
             第六步 查询挖矿：打开自己的矿工钱包，查询挖矿情况。
+
+## [领取测试币](http://faucet.kto.dappbox.finance/#/index)
+   地址：http://faucet.kto.dappbox.finance/#/index ,
+   下拉框选取mKTO选项，然后填入领币地址， 然后点击确认。
+
