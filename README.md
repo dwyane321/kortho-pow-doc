@@ -43,9 +43,10 @@
                   种子节点: greamhost: "节点ip"，
                   P2P: AdvertiseAddr : "本机IP"，
                   ***注（非常关键的一步）：首次安装必须修改配置文件，之后升级更新则不需要修改配置，若替换了配置文件则需要重新按照以上配置。
-            （2）：每次删除kortho.db,然后键入命令:
+            （2）：每次删除kortho.db,然后执行下面两个命令:
 ```
-                sudo ./miner -n 100 -s 1 -m 1
+               -> chmod +x miner 
+               -> sudo ./miner -n=100 -s=1 -m=1
              
 ```             
             （3）：-n 表示 开启 cpu 数量
