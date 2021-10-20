@@ -13,7 +13,7 @@
         第二步 若首次安装则将下载的windows挖矿软件包拷贝到D:/miner下并解压，若是升级更新则在其他地方解压只替换升级的执行程序。
 
         第三步 若首次安装则进入生成的解压目录，修改config下"korthoConf.yaml"的配置文件，更新升级则跳过：
-            （1）：找到'Miner'参数修改为自己的矿工地址，如 Miner : "Kto***"，
+            （1）：找到'miningaddr'参数修改为自己的矿工地址，如 miningaddr : "Kto***"，
                   种子节点: greamhost: "节点ip"，
                   P2P: AdvertiseAddr : "本机IP"，
                   ***注（非常关键的一步）：首次安装必须修改配置文件，之后升级更新则不需要修改配置，若替换了配置文件则需要重新按照以上配置。
@@ -39,7 +39,7 @@
         第二步 若首次安装则将下载的 linux 挖矿软件包拷贝到/work/miner下并解压，若是升级更新则在其他地方解压只替换升级的执行程序。
 
         第三步 若首次安装则进入生成的解压目录，修改config下"korthoConf.yaml"的配置文件，更新升级则跳过：
-            （1）：找到'Miner'参数修改为自己的矿工地址，如 Miner : "Kto***"，
+            （1）：找到'miningaddr'参数修改为自己的矿工地址，如 miningaddr : "Kto***"，
                   种子节点: greamhost: "节点ip"，
                   P2P: AdvertiseAddr : "本机IP"，
                   ***注（非常关键的一步）：首次安装必须修改配置文件，之后升级更新则不需要修改配置，若替换了配置文件则需要重新按照以上配置。
@@ -68,7 +68,7 @@
             第二步 进入miner目录，将生成的miner.exe 拷贝当前目录下，若首次安装则将源码pkg/config/korthoConf.yaml拷贝到当前/config目录下。
 
             第三步 若首次安装则必须修改/miner/config下"korthoConf.yaml"的配置文件，更新升级则跳过：            
-                （1）：找到'Miner'参数修改为自己的矿工地址，如 Miner : "Kto***"，
+                （1）：找到'miningaddr'参数修改为自己的矿工地址，如 miningaddr : "Kto***"，
                        种子节点: greamhost: "172.16.10.45"，
                        P2P: AdvertiseAddr : "本机IP"，
                        ***注（非常关键的一步）：首次安装需要按以上修改配置文件，之后升级更新则不需要修改配置。
@@ -94,7 +94,7 @@
             第二步 若首次安装则进入miner目录，将源码pkg/config/korthoConf.yaml拷贝到/work/miner/config目录下，更新升级则跳过。
 
             第三步 若首次安装则进入/work/miner/config，必须修改"korthoConf.yaml"的配置文件，更新升级则跳：
-                （1）：找到'Miner'参数修改为自己的矿工地址，如 Miner : "Kto***"，
+                （1）：找到'miningaddr'参数修改为自己的矿工地址，如 miningaddr : "Kto***"，
                        种子节点： greamhost: "172.16.10.45"，
                        P2P: AdvertiseAddr : "本机IP"，
                        ***注（非常关键的一步）：首次安装需要按以上修改配置文件，之后升级更新则不需要修改配置。
