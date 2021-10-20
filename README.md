@@ -14,8 +14,10 @@
 
         第三步 若首次安装则进入生成的解压目录，修改config下"korthoConf.yaml"的配置文件，更新升级则跳过：
             （1）：找到'miningaddr'参数修改为自己的矿工地址，如 miningaddr : "Kto***"，
-                  种子节点: greamhost: "节点ip"，
-                  P2P: AdvertiseAddr : "本机IP"，
+                  种子节点: greamhost: "种子节点ip"，
+                  P2P配置（有公网Ip情况下配置，无公网IP则默认）:
+                       advertiseaddr : "本机公网IP"，
+                       jionmembers: "种子节点ip".
                   ***注（非常关键的一步）：首次安装必须修改配置文件，之后升级更新则不需要修改配置，若替换了配置文件则需要重新按照以上配置。
 
         第四步 进入生成的解压目录，打开windows命令行：        
@@ -40,8 +42,10 @@
 
         第三步 若首次安装则进入生成的解压目录，修改config下"korthoConf.yaml"的配置文件，更新升级则跳过：
             （1）：找到'miningaddr'参数修改为自己的矿工地址，如 miningaddr : "Kto***"，
-                  种子节点: greamhost: "节点ip"，
-                  P2P: AdvertiseAddr : "本机IP"，
+                  种子节点: greamhost: "种子节点ip"，
+                   P2P配置（有公网Ip情况下配置，无公网IP则默认）:
+                       advertiseaddr : "本机公网IP"，
+                       jionmembers: "种子节点ip".
                   ***注（非常关键的一步）：首次安装必须修改配置文件，之后升级更新则不需要修改配置，若替换了配置文件则需要重新按照以上配置。
             （2）：每次删除kortho.db,然后执行下面两个命令:
 ```
@@ -70,8 +74,10 @@
 
             第三步 若首次安装则必须修改/miner/config下"korthoConf.yaml"的配置文件，更新升级则跳过：            
                 （1）：找到'miningaddr'参数修改为自己的矿工地址，如 miningaddr : "Kto***"，
-                       种子节点: greamhost: "172.16.10.45"，
-                       P2P: AdvertiseAddr : "本机IP"，
+                       种子节点: greamhost: "种子节点ip"，
+                        P2P配置（有公网Ip情况下配置，无公网IP则默认）:
+                            advertiseaddr : "本机公网IP"，
+                            jionmembers: "种子节点ip".
                        ***注（非常关键的一步）：首次安装需要按以上修改配置文件，之后升级更新则不需要修改配置。
             第四步 进入miner目录,打开windows命令行：
                 （0）：每次删除kortho.db,然后键入命令: 
@@ -96,8 +102,10 @@
 
             第三步 若首次安装则进入/work/miner/config，必须修改"korthoConf.yaml"的配置文件，更新升级则跳：
                 （1）：找到'miningaddr'参数修改为自己的矿工地址，如 miningaddr : "Kto***"，
-                       种子节点： greamhost: "172.16.10.45"，
-                       P2P: AdvertiseAddr : "本机IP"，
+                       种子节点： greamhost: "种子节点ip"，
+                       P2P配置（有公网Ip情况下配置，无公网IP则默认）:
+                            advertiseaddr : "本机公网IP"，
+                            jionmembers: "种子节点ip".
                        ***注（非常关键的一步）：首次安装需要按以上修改配置文件，之后升级更新则不需要修改配置。
             第四步 /work/miner/：
                 （0）：每次删除kortho.db,然后键入命令: 
