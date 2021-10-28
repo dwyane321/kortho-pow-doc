@@ -4,6 +4,7 @@
 |  :----  | :----  |
 |  [kortho_miner_windows_0.0.1](https://www.kortho.org/file/windows/miner_windows_001.zip)  | [kortho_miner_linux_0.0.1](https://www.kortho.org/file/linux/miner_linux_001.zip) |
 |  [kortho_miner_windows_0.0.2](https://www.kortho.org/file/windows/miner_windows_002.zip)  | [kortho_miner_linux_0.0.2](https://www.kortho.org/file/linux/miner_linux_002.zip) |
+|  [kortho_miner_windows_0.0.3](https://www.kortho.org/file/windows/miner_windows_003.zip)  | [kortho_miner_linux_0.0.3](https://www.kortho.org/file/linux/miner_linux_003.zip) |
 
    
 ## 配置安装：
@@ -15,15 +16,16 @@
         第三步 若首次安装则进入生成的解压目录，修改config下"korthoConf.yaml"的配置文件，更新升级则跳过：
             （1）：找到'miningaddr'参数修改为自己的矿工地址，如 miningaddr : "Kto***"，
                   种子节点: greamhost: "种子节点ip"，
-                  P2P配置（有公网Ip情况下配置，无公网IP则默认）:
+                  p2pconfig配置（有公网Ip情况下配置以下两个，无公网IP则默认）:
                        advertiseaddr : "本机公网IP"，
                        jionmembers: "种子节点ip".
                   ***注（非常关键的一步）：首次安装必须修改配置文件，之后升级更新则不需要修改配置，若替换了配置文件则需要重新按照以上配置。
 
         第四步 进入生成的解压目录，打开windows命令行：        
-            （0）：每次删除kortho.db,然后键入命令:
+            （0）：键入命令:
 ```
-                miner.exe -n 100 -s 1 -m 1
+                [有公网ip节点]->: miner.exe -n 100 -s 1 
+                [无公网ip节点]->: miner.exe -n 100 -s 1 -m 1
              
 ```
             （1）：-n 表示 开启 cpu 数量
@@ -43,14 +45,16 @@
         第三步 若首次安装则进入生成的解压目录，修改config下"korthoConf.yaml"的配置文件，更新升级则跳过：
             （1）：找到'miningaddr'参数修改为自己的矿工地址，如 miningaddr : "Kto***"，
                   种子节点: greamhost: "种子节点ip"，
-                   P2P配置（有公网Ip情况下配置，无公网IP则默认）:
-                       advertiseaddr : "本机公网IP"，
-                       jionmembers: "种子节点ip".
+                  p2pconfig配置（有公网Ip情况下配置以下两个，无公网IP则默认）:
+                      advertiseaddr : "本机公网IP"，
+                      jionmembers: "种子节点ip".
                   ***注（非常关键的一步）：首次安装必须修改配置文件，之后升级更新则不需要修改配置，若替换了配置文件则需要重新按照以上配置。
-            （2）：每次删除kortho.db,然后执行下面两个命令:
+            （2）：执行下面两个命令:
 ```
-               -> chmod +x miner 
-               -> sudo ./miner -n=100 -s=1 -m=1
+               [若首次运行]-> chmod +x miner 
+
+               [有公网ip节点]->: sudo miner -n 100 -s 1                
+               [无公网ip节点]->: sudo miner -n 100 -s 1 -m 1
              
 ```             
             （3）：-n 表示 开启 cpu 数量
