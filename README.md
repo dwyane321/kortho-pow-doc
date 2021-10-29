@@ -56,8 +56,8 @@
 ```
                [若首次运行]-> chmod +x miner 
 
-               [有公网ip节点]->: sudo ./miner -n 100 -s 1                
-               [无公网ip节点]->: sudo ./miner -n 100 -s 1 -m 1
+               [有公网ip节点]->: sudo ./miner -n=100 -s=1                
+               [无公网ip节点]->: sudo ./miner -n=100 -s=1 -m=1
              
 ```             
             （3）：-n 表示 开启 cpu 数量
@@ -118,8 +118,8 @@
             第四步 /work/miner/：
                 （0）：每次删除kortho.db,然后键入命令: 
 ```
-                    [有公网ip节点]->: sudo ./miner -n 100 -s 1                
-                    [无公网ip节点]->: sudo ./miner -n 100 -s 1 -m 1
+                   [有公网ip节点]->: sudo ./miner -n=100 -s=1                
+                   [无公网ip节点]->: sudo ./miner -n=100 -s=1 -m=1
 
 ```
                 （1）：-n 表示 开启 cpu 数量
