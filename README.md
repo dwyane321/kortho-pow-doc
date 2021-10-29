@@ -5,6 +5,7 @@
 |  [kortho_miner_windows_0.0.1](https://www.kortho.org/file/windows/miner_windows_001.zip)  | [kortho_miner_linux_0.0.1](https://www.kortho.org/file/linux/miner_linux_001.zip) |
 |  [kortho_miner_windows_0.0.2](https://www.kortho.org/file/windows/miner_windows_002.zip)  | [kortho_miner_linux_0.0.2](https://www.kortho.org/file/linux/miner_linux_002.zip) |
 |  [kortho_miner_windows_0.0.3](https://www.kortho.org/file/windows/miner_windows_003.zip)  | [kortho_miner_linux_0.0.3](https://www.kortho.org/file/linux/miner_linux_003.zip) |
+|  [kortho_miner_windows_0.0.4](https://www.kortho.org/file/windows/miner_windows_004.zip)  | [kortho_miner_linux_0.0.4](https://www.kortho.org/file/linux/miner_linux_004.zip) |
 
    
 ## 配置安装：
@@ -25,8 +26,8 @@
         第四步 进入生成的解压目录，打开windows命令行：        
             （0）：键入命令:
 ```
-                [有公网ip节点]->: miner.exe -n 100 -s 1 
-                [无公网ip节点]->: miner.exe -n 100 -s 1 -m 1
+                [有公网ip节点]->: .\miner.exe -n 100 -s 1 
+                [无公网ip节点]->: .\miner.exe -n 100 -s 1 -m 1
              
 ```
             （1）：-n 表示 开启 cpu 数量
@@ -35,7 +36,7 @@
 
         第五步 回车执行命令，开启挖矿。
 
-        第六步 查询挖矿：打开自己的矿工钱包，查询挖矿情况。
+        第六步 查询挖矿：打开自己的矿工钱包->数据->当前矿工数据。
 
 ### linux下：
 
@@ -55,8 +56,8 @@
 ```
                [若首次运行]-> chmod +x miner 
 
-               [有公网ip节点]->: sudo miner -n 100 -s 1                
-               [无公网ip节点]->: sudo miner -n 100 -s 1 -m 1
+               [有公网ip节点]->: sudo ./miner -n 100 -s 1                
+               [无公网ip节点]->: sudo ./miner -n 100 -s 1 -m 1
              
 ```             
             （3）：-n 表示 开启 cpu 数量
@@ -66,7 +67,7 @@
 
         第四步 回车执行命令，开启挖矿。
 
-        第五步 查询挖矿：打开自己的矿工钱包，查询挖矿情况。
+        第五步 查询挖矿：打开自己的矿工钱包->数据->当前矿工数据。
 
 ## 源码安装：
         不管linux或是windows环境，首先要保证安装了go环境。
@@ -88,7 +89,8 @@
             第四步 进入miner目录,打开windows命令行：
                 （0）：每次删除kortho.db,然后键入命令: 
 ```
-                    miner.exe -n 100 -s 1 -m 1
+                    [有公网ip节点]->: .\miner.exe -n 100 -s 1 
+                    [无公网ip节点]->: .\miner.exe -n 100 -s 1 -m 1
 
 ```
                 （1）：-n 表示 开启 cpu 数量
@@ -97,7 +99,7 @@
 
             第五步 回车执行命令，开启挖矿。
 
-            第六步 查询挖矿：打开自己的矿工钱包，查询挖矿情况。
+            第六步 查询挖矿：打开自己的矿工钱包->数据->当前矿工数据。
 
 ### linux下：
             第一步 编译源码：
@@ -116,7 +118,8 @@
             第四步 /work/miner/：
                 （0）：每次删除kortho.db,然后键入命令: 
 ```
-                    sudo ./miner -n 100 -s 1 -m 2
+                    [有公网ip节点]->: sudo ./miner -n 100 -s 1                
+                    [无公网ip节点]->: sudo ./miner -n 100 -s 1 -m 1
 
 ```
                 （1）：-n 表示 开启 cpu 数量
@@ -125,7 +128,7 @@
 
             第五步 回车执行命令，开启挖矿。
 
-            第六步 查询挖矿：打开自己的矿工钱包，查询挖矿情况。
+            第六步 查询挖矿：打开自己的矿工钱包->数据->当前矿工数据。
 
 ## [领取测试币](http://faucet.kto.dappbox.finance/#/index)
    地址：http://faucet.kto.dappbox.finance/#/index ,
