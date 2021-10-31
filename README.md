@@ -24,9 +24,13 @@
                   ***注（非常关键的一步）：首次安装必须修改配置文件，之后升级更新则不需要修改配置，若替换了配置文件则需要重新按照以上配置,
                         种子节点附带在安装包中。
 
-        第四步 进入生成的解压目录，打开windows命令行：        
+        第四步 点开windows开始菜单，在搜索框中输入“cmd”，在搜索结果中，对着命令提示符程序，单击鼠标右键，菜单中点击选择“以管理员身份运行”,如图: 
+![Image text](.\picture\cmd1.jpg)               
             （0）：键入命令:
-```
+
+```             先执行下一行命令跳转到miner目录：
+                [C:\Users\Administrator>] cd /d E:\miner\miner_windows
+                然后再根据有无公网ip执行下面对应的其中一个命令！！！
                 [有公网ip节点]->: .\miner.exe -n 100 -s 1 
                 [无公网ip节点]->: .\miner.exe -n 100 -s 1 -m 1
              
@@ -87,9 +91,13 @@
                             advertiseaddr : "本机公网IP"，
                             jionmembers: "种子节点ip".
                        ***注（非常关键的一步）：首次安装需要按以上修改配置文件，之后升级更新则不需要修改配置。
-            第四步 进入miner目录,打开windows命令行：
-                （0）：每次删除kortho.db,然后键入命令: 
+            第四步 点开windows开始菜单，在搜索框中输入“cmd”，在搜索结果中，对着命令提示符程序，单击鼠标右键，菜单中点击选择“以管理员身份运行”,如图: 
+![Image text](.\picture\cmd1.jpg)
+                （0）：然后键入命令: 
 ```
+                    先执行下一行命令跳转到miner目录：
+                    [C:\Users\Administrator>] cd /d E:\miner\miner_windows
+                    然后再根据有无公网ip执行下面对应的其中一个命令！！！
                     [有公网ip节点]->: .\miner.exe -n 100 -s 1 
                     [无公网ip节点]->: .\miner.exe -n 100 -s 1 -m 1
 
