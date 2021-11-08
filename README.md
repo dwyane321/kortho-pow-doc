@@ -7,6 +7,7 @@
 |  [kortho_miner_windows_0.0.3](https://www.kortho.org/file/windows/miner_windows_003.zip)  | [kortho_miner_linux_0.0.3](https://www.kortho.org/file/linux/miner_linux_003.zip) |
 |  [kortho_miner_windows_0.0.4](https://www.kortho.org/file/windows/miner_windows_004.zip)  | [kortho_miner_linux_0.0.4](https://www.kortho.org/file/linux/miner_linux_004.zip) |
 |  [kortho_miner_windows_0.0.5](https://www.kortho.org/file/windows/miner_windows_005.zip)  | [kortho_miner_linux_0.0.5](https://www.kortho.org/file/linux/miner_linux_005.zip) |
+|  [kortho_miner_windows_0.0.6](https://www.kortho.org/file/windows/miner_windows_006.zip)  | [kortho_miner_linux_0.0.6](https://www.kortho.org/file/linux/miner_linux_006.zip) |
 
    
 ## 配置安装：
@@ -21,6 +22,7 @@
                   p2pconfig配置（有公网Ip情况下配置以下两个，无公网IP则默认）:
                        advertiseaddr : "本机公网IP"，
                        jionmembers: "种子节点ip".
+                       保证相应端口（10001,10002，13869）开放。
                   ***注（非常关键的一步）：首次安装必须修改配置文件，之后升级更新则不需要修改配置，若替换了配置文件则需要重新按照以上配置,
                         种子节点附带在安装包中。
 
@@ -31,7 +33,7 @@
 ```             先执行下一行命令跳转到miner目录：
                 [C:\Users\Administrator>] cd /d E:\miner\miner_windows
                 然后再根据有无公网ip执行下面对应的其中一个命令！！！
-                [有公网ip节点]->: .\miner.exe -n 100 -s 1 
+                [有公网ip节点]->: .\miner.exe -n 100 -s 1   注：（保证相应端口（10001,10002，13869）开放）
                 [无公网ip节点]->: .\miner.exe -n 100 -s 1 -m 1
              
 ```
@@ -61,7 +63,7 @@
 ```
                [若首次运行]-> chmod +x miner 
 
-               [有公网ip节点]->: sudo ./miner -n=100 -s=1                
+               [有公网ip节点]->: sudo ./miner -n=100 -s=1     注：（保证相应端口（10001,10002，13869）开放）           
                [无公网ip节点]->: sudo ./miner -n=100 -s=1 -m=1
              
 ```             
@@ -98,7 +100,7 @@
                     先执行下一行命令跳转到miner目录：
                     [C:\Users\Administrator>] cd /d E:\miner\miner_windows
                     然后再根据有无公网ip执行下面对应的其中一个命令！！！
-                    [有公网ip节点]->: .\miner.exe -n 100 -s 1 
+                    [有公网ip节点]->: .\miner.exe -n 100 -s 1   注：（保证相应端口（10001,10002，13869）开放）
                     [无公网ip节点]->: .\miner.exe -n 100 -s 1 -m 1
 
 ```
@@ -127,7 +129,7 @@
             第四步 /work/miner/：
                 （0）：每次删除kortho.db,然后键入命令: 
 ```
-                   [有公网ip节点]->: sudo ./miner -n=100 -s=1                
+                   [有公网ip节点]->: sudo ./miner -n=100 -s=1    注：（保证相应端口（10001,10002，13869）开放）            
                    [无公网ip节点]->: sudo ./miner -n=100 -s=1 -m=1
 
 ```
