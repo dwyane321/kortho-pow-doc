@@ -16,6 +16,11 @@ killMiner(){
 	 done
 }
 
+if ! [ -x "$(command -v curl)" ];then
+    echo "curl not exist,start to install now..."
+	sudo apt-get update
+	sudo apt-get install curl
+fi
 
 select ch in "安装(请输入 1)" "升级(请输入 2)" "修改配置(请输入 3)" "重启挖矿(请输入 4)" "停止挖矿(请输入 5)"  "退出(请输入 6)"
 do
@@ -30,11 +35,11 @@ case $ch in
 	
 	read -p "请输入种子节点:" seed_addr
 	
-	read -p "是否有公网IP(y/n):" answer
-
 	if [ ! -d "./$DOWNLOAD" ]; then
 		mkdir "$DOWNLOAD"
 	fi
+	
+	read -p "是否有公网IP(y/n):" answer
 	
 	if [[ $answer = "Y" || $answer = "y" ]];then
 		
