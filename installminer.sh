@@ -16,12 +16,6 @@ killMiner(){
 	 done
 }
 
-if ! [ -x "$(command -v curl)" ];then
-    echo "curl not exist,start to install now..."
-	sudo apt-get update
-	sudo apt-get install curl
-fi
-
 select ch in "安装(请输入 1)" "升级(请输入 2)" "修改配置(请输入 3)" "重启挖矿(请输入 4)" "停止挖矿(请输入 5)"  "退出(请输入 6)"
 do
 case $ch in
@@ -29,18 +23,18 @@ case $ch in
 	
 	echo "开始安装"
 	
-	sudo -S rm -rf $MINERPATH
-
-	read -p "请输入矿工地址:" miner_addr
-	
-	read -p "请输入种子节点:" seed_addr
+	sudo -S rm -rf $MINERPATH	
 	
 	if [ ! -d "./$DOWNLOAD" ]; then
 		mkdir "$DOWNLOAD"
 	fi
 	
+	read -p "请输入矿工地址:" miner_addr
+		
+	read -p "请输入种子节点:" seed_addr
+
 	read -p "是否有公网IP(y/n):" answer
-	
+
 	if [[ $answer = "Y" || $answer = "y" ]];then
 		
 		read -p "请输入本节点公网IP:" public_ip				
@@ -49,10 +43,8 @@ case $ch in
 		
 		echo "version: miner_linux_$v.zip"
 		
-		curl -O "https://www.kortho.org/file/linux/miner_linux_$v.zip"
+		wget -P ./$DOWNLOAD "https://www.kortho.org/file/linux/miner_linux_$v.zip"
 		
-		mv "./miner_linux_$v.zip" ./$DOWNLOAD
-
 		unzip "./download/miner_linux_$v.zip" -d ./
 		
 		sed -i '/miningaddr*/c\  miningaddr: '$miner_addr'' $CONFIGFILE
@@ -75,9 +67,7 @@ case $ch in
 		
 		echo "version: miner_linux_$v.zip"
 		
-		curl -O "https://www.kortho.org/file/linux/miner_linux_$v.zip"
-		
-		mv "./miner_linux_$v.zip" ./$DOWNLOAD
+		wget -P ./$DOWNLOAD "https://www.kortho.org/file/linux/miner_linux_$v.zip"
 
 		unzip "./download/miner_linux_$v.zip" -d ./
 		
@@ -115,10 +105,8 @@ case $ch in
 	
 	echo "version: miner_linux_$v.zip"
 		
-	curl -O "https://www.kortho.org/file/linux/miner_linux_$v.zip"
+	wget -P ./$DOWNLOAD "https://www.kortho.org/file/linux/miner_linux_$v.zip"
 		
-	mv "./miner_linux_$v.zip" ./$DOWNLOAD
-
 	unzip -o "./$DOWNLOAD/miner_linux_$v.zip" -d "tmp"
 	
 	cp -f "./tmp/miner_linux/miner" "./$MINERPATH"
