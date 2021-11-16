@@ -98,6 +98,8 @@ case $ch in
 	fi
 	
 	echo "开始升级..."
+
+	sudo -S rm -rf "$MINERPATH/kortho.db"
 	
 	rm -rf "./tmp"
 		
