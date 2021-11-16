@@ -8,7 +8,7 @@
 |  [kortho_miner_windows_0.0.4](https://www.kortho.org/file/windows/miner_windows_004.zip)  | [kortho_miner_linux_0.0.4](https://www.kortho.org/file/linux/miner_linux_004.zip) |
 |  [kortho_miner_windows_0.0.5](https://www.kortho.org/file/windows/miner_windows_005.zip)  | [kortho_miner_linux_0.0.5](https://www.kortho.org/file/linux/miner_linux_005.zip) |
 |  [kortho_miner_windows_0.0.6](https://www.kortho.org/file/windows/miner_windows_006.zip)  | [kortho_miner_linux_0.0.6](https://www.kortho.org/file/linux/miner_linux_006.zip) |
-
+|  [kortho_miner_windows_0.0.7](https://www.kortho.org/file/windows/miner_windows_007.zip)  | [kortho_miner_linux_0.0.7](https://www.kortho.org/file/linux/miner_linux_007.zip) |
    
 ## 配置安装：
 ### windows下：
