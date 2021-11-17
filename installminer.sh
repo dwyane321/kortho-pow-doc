@@ -10,10 +10,10 @@ DOWNLOAD="download"
 
 killMiner(){
 	PID=$(ps -ef | grep "./$MINER" | grep -v "grep" | awk '{print $2}')
-        for id in $PID;do
-        	sudo -S kill -9 $id 
-                echo "killed $id"
-	 done
+    for id in $PID;do
+       	sudo -S kill -9 $id 
+        echo "killed $id"
+	done
 }
 
 select ch in "安装(请输入 1)" "升级(请输入 2)" "修改配置(请输入 3)" "重启挖矿(请输入 4)" "停止挖矿(请输入 5)"  "退出(请输入 6)"
@@ -99,8 +99,12 @@ case $ch in
 	
 	echo "开始升级..."
 
-	sudo -S rm -rf "$MINERPATH/kortho.db"
-	
+	read -p "是否删除历史数据(y/n):" del
+
+	if [[ $del = "Y" || $del = "y" ]];then
+		sudo -S rm -rf "$MINERPATH/kortho.db debug*"
+	fi
+
 	rm -rf "./tmp"
 		
 	read -p "请输入要升级的版本号(例如：005,015,115):" v
