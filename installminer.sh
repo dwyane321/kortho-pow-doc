@@ -22,6 +22,8 @@ case $ch in
 	"安装(请输入 1)")
 	
 	echo "开始安装"
+
+	killMiner
 	
 	sudo -S rm -rf $MINERPATH	
 	
@@ -29,6 +31,19 @@ case $ch in
 		mkdir "$DOWNLOAD"
 	fi
 	
+	read -p "请输入安装包版本号(例如：005,015,115):" v
+		
+	echo "version: miner_linux_$v.zip"
+		
+	wget -P ./$DOWNLOAD "https://www.kortho.org/file/linux/miner_linux_$v.zip"
+		
+	unzip "./download/miner_linux_$v.zip" -d ./
+
+	if [ ! -d "./$MINERPATH" ]; then
+		echo "error: download or unzip failed $MINERPATH not exist."
+		break
+	fi
+
 	read -p "请输入矿工地址:" miner_addr
 		
 	read -p "请输入种子节点:" seed_addr
@@ -37,15 +52,7 @@ case $ch in
 
 	if [[ $answer = "Y" || $answer = "y" ]];then
 		
-		read -p "请输入本节点公网IP:" public_ip				
-			
-		read -p "请输入版本号(例如：005,015,115):" v
-		
-		echo "version: miner_linux_$v.zip"
-		
-		wget -P ./$DOWNLOAD "https://www.kortho.org/file/linux/miner_linux_$v.zip"
-		
-		unzip "./download/miner_linux_$v.zip" -d ./
+		read -p "请输入本节点公网IP:" public_ip						
 		
 		sed -i '/miningaddr*/c\  miningaddr: '$miner_addr'' $CONFIGFILE
 		
@@ -53,9 +60,7 @@ case $ch in
 		
 		sed -i '/jionmembers*/c\  jionmembers: '$seed_addr'' $CONFIGFILE
 		
-		sed -i '/advertiseaddr*/c\  advertiseaddr: '$public_ip'' $CONFIGFILE
-		
-		killMiner
+		sed -i '/advertiseaddr*/c\  advertiseaddr: '$public_ip'' $CONFIGFILE		
 	
 		cd "./$MINERPATH"
 	
@@ -63,19 +68,9 @@ case $ch in
 		
 		setsid sudo -S ./$MINER -n=$CPUNUM -s=1
 	else
-		read -p "请输入版本号(例如：005,015,115):" v
-		
-		echo "version: miner_linux_$v.zip"
-		
-		wget -P ./$DOWNLOAD "https://www.kortho.org/file/linux/miner_linux_$v.zip"
-
-		unzip "./download/miner_linux_$v.zip" -d ./
-		
 		sed -i '/miningaddr*/c\  miningaddr: '$miner_addr'' $CONFIGFILE
 		
-		sed -i '/greamhost:*/c\  greamhost: '$seed_addr'' $CONFIGFILE
-		
-		killMiner
+		sed -i '/greamhost:*/c\  greamhost: '$seed_addr'' $CONFIGFILE	
 
 		cd "./$MINERPATH"
 			   
@@ -99,10 +94,20 @@ case $ch in
 	
 	echo "开始升级..."
 
+	if [ ! -d "./$DOWNLOAD" ]; then
+		echo "error: $DOWNLOAD not exist."
+		break
+	fi
+
+	if [ ! -d "./$MINERPATH" ]; then
+		echo "error: $MINERPATH not exist."
+		break
+	fi
+
 	read -p "是否删除历史数据(y/n):" del
 
 	if [[ $del = "Y" || $del = "y" ]];then
-		sudo -S rm -rf "$MINERPATH/kortho.db debug*"
+		sudo -S rm -rf "$MINERPATH/kortho.db"
 	fi
 
 	rm -rf "./tmp"
@@ -140,7 +145,6 @@ case $ch in
 
         if [[ $answer = "Y" || $answer = "y" ]];then
         	read -p "请输入新矿工地址:" mdminer
-
                 sed -i '/miningaddr*/c\  miningaddr: '$mdminer'' $CONFIGFILE
         fi
 
