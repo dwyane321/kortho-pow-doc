@@ -49,6 +49,7 @@ case $ch in
 	read -p "请输入种子节点:" seed_addr
 
 	read -p "是否有公网IP(y/n):" answer
+	
 
 	if [[ $answer = "Y" || $answer = "y" ]];then
 		
@@ -104,7 +105,7 @@ case $ch in
 		break
 	fi
 
-	read -p "是否删除历史数据(y/n):" del
+	read -p "是否清除本地数据(y/n):" del
 
 	if [[ $del = "Y" || $del = "y" ]];then
 		sudo -S rm -rf "$MINERPATH/kortho.db"
