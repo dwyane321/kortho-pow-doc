@@ -1,16 +1,7 @@
 # KORTHO
 ## 下载地址
 | windows | linux |
-|  :----  | :----  |
-|  [kortho_miner_windows_0.0.1](https://www.kortho.org/file/windows/miner_windows_001.zip)  | [kortho_miner_linux_0.0.1](https://www.kortho.org/file/linux/miner_linux_001.zip) |
-|  [kortho_miner_windows_0.0.2](https://www.kortho.org/file/windows/miner_windows_002.zip)  | [kortho_miner_linux_0.0.2](https://www.kortho.org/file/linux/miner_linux_002.zip) |
-|  [kortho_miner_windows_0.0.3](https://www.kortho.org/file/windows/miner_windows_003.zip)  | [kortho_miner_linux_0.0.3](https://www.kortho.org/file/linux/miner_linux_003.zip) |
-|  [kortho_miner_windows_0.0.4](https://www.kortho.org/file/windows/miner_windows_004.zip)  | [kortho_miner_linux_0.0.4](https://www.kortho.org/file/linux/miner_linux_004.zip) |
-|  [kortho_miner_windows_0.0.5](https://www.kortho.org/file/windows/miner_windows_005.zip)  | [kortho_miner_linux_0.0.5](https://www.kortho.org/file/linux/miner_linux_005.zip) |
-|  [kortho_miner_windows_0.0.6](https://www.kortho.org/file/windows/miner_windows_006.zip)  | [kortho_miner_linux_0.0.6](https://www.kortho.org/file/linux/miner_linux_006.zip) |
-|  [kortho_miner_windows_0.0.7](https://www.kortho.org/file/windows/miner_windows_007.zip)  | [kortho_miner_linux_0.0.7](https://www.kortho.org/file/linux/miner_linux_007.zip) |
-|  [kortho_miner_windows_0.0.8](https://www.kortho.org/file/windows/miner_windows_008.zip)  | [kortho_miner_linux_0.0.8](https://www.kortho.org/file/linux/miner_linux_008.zip) |
-|  [kortho_miner_windows_0.0.9](https://www.kortho.org/file/windows/miner_windows_009.zip)  | [kortho_miner_linux_0.0.9](https://www.kortho.org/file/linux/miner_linux_009.zip) |
+|  :----  | :----  ||  
 |  [kortho_miner_windows_0.1.0](https://www.kortho.org/file/windows/miner_windows_010.zip)  | [kortho_miner_linux_0.1.0](https://www.kortho.org/file/linux/miner_linux_010.zip) |
    
 ## 配置安装：
