@@ -1,7 +1,7 @@
 # KORTHO
 ## 下载地址
 | windows | linux |
-|  :----  | :----  ||  
+|  :----  | :----  |
 |  [kortho_miner_windows_0.1.0](https://www.kortho.org/file/windows/miner_windows_010.zip)  | [kortho_miner_linux_0.1.0](https://www.kortho.org/file/linux/miner_linux_010.zip) |
    
 ## 配置安装：
