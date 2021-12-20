@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 #添加选择
 	 	
@@ -45,8 +45,11 @@ case $ch in
 	fi
 
 	read -p "请输入矿工地址:" miner_addr
+
+	cat "./$MINERPATH/种子节点.txt"
+	echo ""
 		
-	read -p "请输入种子节点:" seed_addr
+	read -p "请上面地址中复制一个种子节点:" seed_addr
 
 	read -p "是否有公网IP(y/n):" answer
 	
@@ -155,8 +158,11 @@ case $ch in
 	read -p "是否修改种子节点(y/n):" answer
 		
 	if [[ $answer = "Y" || $answer = "y" ]];then
+
+		cat "./$MINERPATH/种子节点.txt"
+		echo ""
 		
-		read -p "请输入新种子节点ip:" mdseed
+		read -p "请从上面地址中复制一个新种子节点:" mdseed
 		
 		if [[ $answerPub = "Y" || $answerPub = "y" ]];then
 			sed -i '/greamhost*/c\  greamhost: '$mdseed'' $CONFIGFILE
