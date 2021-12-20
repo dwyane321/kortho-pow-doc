@@ -2,7 +2,7 @@
 ## 安装包下载地址
 | windows | linux |
 |  :----  | :----  |
-|  [kortho_miner_windows_0.1.1](https://www.kortho.org/file/windows/miner_windows_011.zip)  | [kortho_miner_linux_0.1.1](https://www.kortho.org/file/linux/miner_linux_011.zip) |
+|  [kortho_miner_windows_0.1.1](https://www.kortho.org/file/windows/miner_windows_testonline.zip)  | [kortho_miner_linux_0.1.1](https://www.kortho.org/file/linux/miner_linux_testonline.zip) |
 
 ## 数据包下载地址
 [kortho_data_0.1.1](https://www.kortho.org/file/data.tar.gz)
