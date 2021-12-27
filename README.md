@@ -6,7 +6,9 @@
 
 ## 数据包下载地址
 [kortho_data_2.0.1](https://pan.baidu.com/s/16jaLFLYAuUxJ6UxGoAB5yw)
-   
+```
+提取码：xxdb
+```   
 ## 配置安装：
 ### windows下：
         第一步 若首次安装则在工作目录下创建挖矿目录，如 D:/miner（非C盘），更新升级则跳过。
