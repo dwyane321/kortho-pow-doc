@@ -5,7 +5,7 @@
 |  [kortho_miner_windows_2.0.1](https://www.kortho.org/file/windows/miner_windows_v2.0.1.zip)  | [kortho_miner_linux_2.0.1](https://www.kortho.org/file/linux/miner_linux_v2.0.1.zip) |
 
 ## 数据包下载地址
-[kortho_data_0.1.1](https://pan.baidu.com/s/16jaLFLYAuUxJ6UxGoAB5yw)
+[kortho_data_2.0.1](https://pan.baidu.com/s/16jaLFLYAuUxJ6UxGoAB5yw)
    
 ## 配置安装：
 ### windows下：
