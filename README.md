@@ -2,10 +2,10 @@
 ## 安装包下载地址
 | windows | linux |
 |  :----  | :----  |
-|  [kortho_miner_windows_0.1.1](https://www.kortho.org/file/windows/miner_windows_testonline.zip)  | [kortho_miner_linux_0.1.1](https://www.kortho.org/file/linux/miner_linux_testonline.zip) |
+|  [kortho_miner_windows_2.0.1](https://www.kortho.org/file/windows/miner_windows_v2.0.1.zip)  | [kortho_miner_linux_2.0.1](https://www.kortho.org/file/linux/miner_linux_v2.0.1.zip) |
 
 ## 数据包下载地址
-[kortho_data_0.1.1](https://www.kortho.org/file/data.tar.gz)
+[kortho_data_0.1.1](https://pan.baidu.com/s/16jaLFLYAuUxJ6UxGoAB5yw)
    
 ## 配置安装：
 ### windows下：
@@ -57,9 +57,7 @@
                   ***注（非常关键的一步）：首次安装必须修改配置文件，之后升级更新则不需要修改配置，若替换了配置文件则需要重新按照以上配置，
                         种子节点附带在安装包中。
             （2）：执行下面两个命令:
-```
-               [若首次运行]-> chmod +x miner 
-
+```         
                [有公网ip节点]->: sudo ./miner      注：（保证相应端口（10001,10002，13869）开放）           
                [无公网ip节点]->: sudo ./miner -m=1
              
